@@ -1,0 +1,719 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+{% load static %}
+
+<section class=" position-static ">
+  <div class="container-fluid border-bottom p-1">
+
+      <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+          <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+
+          <div class="carousel-inner" >
+
+              <div class="container">
+
+                  <a class="carousel-control-prev" style="height: 20%; top: 33%;  width: 100px; align-items: center; justify-content: center; overflow: hidden;" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+
+              </div>
+
+              <div class="">
+
+                  <a class="carousel-control-next" style="height: 20%; top: 33%;  width: 100px; align-items: center; justify-content: center; overflow: hidden;" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+
+              </div>
+          
+
+          <div class="carousel-item d-flex active">
+
+              <div class="d-flex flex-column m-0  p-5" style=" align-items: center; justify-content: center;">
+                  <div class="container" style="width: max-content;">
+                      <h3 class="m-0">Has just arrived!</h3>   
+                      <h1 class="h1">Huge Summer Collection</h1>
+                      <p class="pb-3">Nike, Vans, Converse, Sneakers & much more...</p>
+                  </div>
+                  <div class="container">
+                      <button type="button" class="btn btn-dark" onclick="location.href=' /all_product'">Shop Now ></button>
+                  </div>
+              </div>
+
+              <div class="container bg-warning m-0 p-0" style="height: 500px; width: 950px;">
+                  <img class="bg-info" style="height: 500px; width: 900px;" src="/static/img/IMG.jpg" alt="Second slide">
+              </div>
+            
+            </div>
+
+
+          <div class="carousel-item">
+
+                  <div class="container-fluid d-flex w-auto bg-warning m-0 p-0">
+                      <div class="d-flex flex-column  p-5" style=" align-items: center; justify-content: center;">
+                          <div class="container" style="width: max-content;">
+                            <h3 class="m-0">Has just arrived!</h3>   
+                            <h1 class="h1">Huge Summer Collection</h1>
+                            <p class="pb-3">Nike, Vans, Converse, Sneakers & much more...</p>
+                          </div>
+                          <div class="container">
+                              <button type="button" class="btn btn-dark" onclick="location.href=' /all_product'">Shop Now ></button>
+                          </div>
+                      </div>
+
+                      <div class="container bg-warning" style="height: 500px; width: 900px;">
+                          <img class="bg-info" style="height: 500px; width: 900px;" src="/static/img/download.jpg" alt="Second slide">
+                      </div>
+
+                  </div>
+              
+              </div>
+
+          <div class="carousel-item">
+
+                  <div class="container-fluid d-flex w-auto bg-success m-0 p-0">
+                      <div class="d-flex flex-column  p-5" style=" align-items: center; justify-content: center;">
+                          <div class="container" style="width: max-content;">
+                            <h3 class="m-0">Has just arrived!</h3>   
+                            <h1 class="h1">Huge Summer Collection</h1>
+                            <p class="pb-3">Nike, Vans, Converse, Sneakers & much more...</p>
+                          </div>
+                          <div class="container">
+                              <button type="button" class="btn btn-dark" onclick="location.href=' /all_product'">Shop Now ></button>
+                          </div>
+                      </div>
+
+                      <div class="container bg-warning m-0 p-0" style="height: 500px; width: 900px;">
+                          <img class="bg-info m-0 p-0" style="height: 500px; width: 900px;" src="/static/img/img1.jpg" alt="Second slide">
+                      </div>
+
+                  </div>
+                  
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+</section>
+
+<div class="container-fluid d-flex bg-light" style="height: 7rem; align-items: center; justify-content: center;">
+  <div class="container-fluid row d-flex">
+    <div class="col d-flex flex-column" style="align-items: center; justify-content: center; width: max-content;">
+      <h4>FREE SHIPING AND RETURN</h4>
+      <span>Free shiping on all orders over $49</span>
+    </div>
+    <div class="col d-flex flex-column border-left border-right" style="align-items: flex-start; justify-content: center;">
+      <h4>MONEY BACK GUARANTEE</h4>
+      <span>100% money back gurantee</span>
+      
+    </div>
+    <div class="col d-flex flex-column" style="align-items: flex-start; justify-content: center;">
+      <h4>ONLINE SUPPORT 24/7</h4>
+      <span>Awesome Support for 24/7 days</span>
+    </div>
+  </div>
+
+</div> 
+
+
+<div class="container-fluid d-flex my-4 bg-light" style="align-items: center;">
+
+    <div class="container m-3 p-0 d-flex flex-row justify-content-center">
+
+        <div class="container m-0 p-0"  style="width: max-content;">
+            <img src="{% static 'img/shoe.png' %}" class="card-img-top" style="width: 10rem; height: 10rem;" alt="...">
+        </div>
+
+        <div class="card-body m-0" style="align-items: center;">
+
+            <div class="container">
+
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Starting at 9$</p>
+                <a href="#" class="btn btn-primary">View</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container m-3 p-0 d-flex flex-row justify-content-center ">
+
+        <div class="container m-0 p-0"  style="width: max-content;">
+            <img src="{% static 'img/shoe.png' %}" class="card-img-top" style="width: 10rem; height: 10rem;" alt="...">
+        </div>
+
+        <div class="card-body m-0" style="align-items: center;">
+
+            <div class="container">
+
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Starting at 9$</p>
+                <a href="#" class="btn btn-primary">View</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container m-3 p-0 d-flex flex-row justify-content-center ">
+
+      <div class="container m-0 p-0"  style="width: max-content;">
+          <img src="{% static 'img/shoe.png' %}" class="card-img-top" style="width: 10rem; height: 10rem;" alt="...">
+      </div>
+
+      <div class="card-body m-0" style="align-items: center;">
+
+        <div class="container">
+
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Starting at 9$</p>
+            <a href="#" class="btn btn-primary">View</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+    
+</div>
+
+
+<div class="container-fluid bg-light">
+
+  <div class="container-fluid  d-flex m-0 p-0 justify-content-between" style="background-color: rgba(0, 0, 0, 0.05); border-radius: 30px ; height: 5rem; align-items: center;">
+
+    <div class="container-fluid h-50 m-1 p-0 w-auto" >
+      <h2 class="p-0 m-0 ">FEATURED PRODUCTS</h2>
+    </div>
+
+    <div class="container-fluid h-50 m-1 p-1 d-flex w-auto">
+    <button class="btn" style="background-color: rgba(183, 177, 229, 0.805); border-radius: 3rem; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);"  onclick="location.href=' /all_product '">VIEW ALL ></button>
+    </div>
+
+  </div>
+  <hr>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .Card{
+      position: relative;
+    }
+
+    .Card .card{
+      position: relative;
+      width: 250px;
+      height: 450px;
+      background: #232323;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .Card .card:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #9bdc28;
+      clip-path: circle(150px at 80% 20%);
+      transition: 0.5s ease-in-out;
+    }
+
+    .Card .card:hover:before{
+      clip-path: circle(300px at 80% -20%);
+    }
+
+    .Card .card:after{
+      content: 'Nike';
+      position: absolute;
+      top: 30%;
+      left: -20%;
+      font-size: 12em;
+      font-weight: 800;
+      font-style: italic;
+      color: rgba(255,255,25,0.05)
+    }
+
+    .Card .card .imgBx{
+      /* position: absolute; */
+      top: 50%;
+      transform: translateY(-50%);
+      /* z-index: 10000; */
+      width: 100%;
+      height: 220px;
+      transition: 0.5s;
+    }
+
+    .Card .card:hover .imgBx{
+      top: 0%;
+      transform: translateY(0%);
+        
+    }
+
+    .Card .card .imgBx img{
+      /* position: absolute; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-25deg);
+      width: 270px;
+    }
+
+    .Card .card .contentBx{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+    }
+
+    .Card .card:hover .contentBx{
+      height: 210px;
+    }
+
+    .Card .card .contentBx h2{
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .Card .card .contentBx .size, .Card .card .contentBx .color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      transition: 0.5s;opacity: 0;
+      visibility: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .Card .card:hover .contentBx .size{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.5s;
+    }
+
+    .Card .card:hover .contentBx .color{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.6s;
+    }
+
+    .Card .card .contentBx .size h3, .Card .card .contentBx .color h3{
+      color: #fff;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-right: 10px;
+    }
+
+    .Card .card .contentBx .size span{
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+      display: inline-block;
+      color: #111;
+      background: #fff;
+      margin: 0 5px;
+      transition: 0.5s;
+      color: #111;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .Card .card .contentBx .size span:hover{
+      background: #9bdc28;
+    }
+
+    .Card .card .contentBx .color span{
+      width: 20px;
+      height: 20px;
+      background: #ff0;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .Card .card .contentBx .color span:nth-child(2){
+      background: #9bdc28;
+    }
+
+    .Card .card .contentBx .color span:nth-child(3){
+      background: #03a9f4;
+    }
+
+    .Card .card .contentBx .color span:nth-child(4){
+      background: #e91e63;
+    }
+
+    .Card .card  .btn{
+      display: inline-block;
+      padding: 10px 20px;
+      background: #000;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #111;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 0.5s;
+      margin-top: 0;
+    }
+
+    .Card .card:hover .contentBx a{
+      opacity: 1;
+      transform: translateY(0px);
+      transition-delay: 0.75s;
+      
+    }
+
+  </style>
+
+
+  <div class="row ml-3">
+
+    {% for product in products  %}
+    <div class="Card mb-3 col-lg-3 col-md-6" id="product" >
+      <div class="card"  style="width: 250px;" onclick="location.href=' /product/{{product.id}} '">
+          <div class="imgBx">
+              <img src=" {{ product.imageURL }} ">
+          </div>
+          <div class="contentBx d-flex flex-column" style="gap: 1rem;" >
+              <h2> {{ product.name }} </h2>
+              <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              </div>
+              <div class="color">
+              <h3>Color :</h3>
+              <span></span>
+              <span></span>
+              <span></span>
+              </div>
+          </div>
+      </div>
+      
+      <div class="link  d-flex mt-4 mb-5 justify-content-start">
+      <a class="btn btn-dark mr-4 ml-4" href="#">${{product.price|floatformat:2}}</a>
+      <button data-product= {{product.id}} data-action="add" class="btn ml-5 btn-dark add-btn update-cart">Cart</button>
+      </div>
+  </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+<div class="container-fluid bg-light">
+
+  <div class="container-fluid d-flex m-0 p-0 justify-content-between" style="background-color: rgba(0, 0, 0, 0.05); border-radius: 30px ; height: 5rem; align-items: center;">
+
+    <div class="container-fluid h-50 m-1 p-0 w-auto" >
+      <h2 class="p-0 m-0 ">NEW ARRIVALS</h2>
+    </div>
+
+    <div class="container-fluid h-50 m-1 p-1 d-flex w-auto">
+    <button class="btn " style="background-color: rgba(183, 177, 229, 0.805); border-radius: 3rem; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);" onclick="location.href=' /all_product '">VIEW ALL ></button>
+    </div>
+
+  </div>
+  <hr>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .Card{
+      position: relative;
+    }
+
+    .Card .card{
+      position: relative;
+      /* /* width: 305px; */
+      height: 350px; 
+      background: #9fe2ae;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .Card .card:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #9bdc28;
+      clip-path: circle(150px at 80% 20%);
+      transition: 0.5s ease-in-out;
+    }
+
+    .Card .card:hover:before{
+      clip-path: circle(300px at 80% -20%);
+    }
+
+    .Card .card:after{
+      content: 'Nike';
+      position: absolute;
+      top: 30%;
+      left: -20%;
+      font-size: 12em;
+      font-weight: 800;
+      font-style: italic;
+      color: rgba(255,255,25,0.05)
+    }
+
+    .Card .card .imgBx{
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+      /* z-index: 10000; */
+      width: 100%;
+      height: 100px;
+      transition: 0.5s;
+    }
+
+    .Card .card:hover .imgBx{
+      top: 0%;
+      transform: translateY(0%);
+        
+    }
+
+    .Card .card .imgBx img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-25deg);
+      width: 270px;
+    }
+
+    .Card .card .contentBx{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+    }
+
+    .Card .card:hover .contentBx{
+      height: 210px;
+    }
+
+    .Card .card .contentBx h2{
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .Card .card .contentBx .size, .Card .card .contentBx .color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      transition: 0.5s;opacity: 0;
+      visibility: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .Card .card:hover .contentBx .size{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.5s;
+    }
+
+    .Card .card:hover .contentBx .color{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.6s;
+    }
+
+    .Card .card .contentBx .size h3, .Card .card .contentBx .color h3{
+      color: rgb(22, 23, 24);
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-right: 10px;
+    }
+
+    .Card .card .contentBx .size span{
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+      display: inline-block;
+      color: #111;
+      background: #fff;
+      margin: 0 5px;
+      transition: 0.5s;
+      color: #111;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .Card .card .contentBx .size span:hover{
+      background: #9bdc28;
+    }
+
+    .Card .card .contentBx .color span{
+      width: 20px;
+      height: 20px;
+      background: #ff0;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .Card .card .contentBx .color span:nth-child(2){
+      background: #9bdc28;
+    }
+
+    .Card .card .contentBx .color span:nth-child(3){
+      background: #03a9f4;
+    }
+
+    .Card .card .contentBx .color span:nth-child(4){
+      background: #e91e63;
+    }
+
+    .Card .card .contentBx a{
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #111;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 0.5s;
+      margin-top: 0;
+    }
+
+    .Card .card:hover .contentBx a{
+      opacity: 1;
+      transform: translateY(0px);
+      transition-delay: 0.75s;
+      
+    }
+
+  </style>
+
+<div class="row ml-3">
+
+  {% for product in newproducts  %}
+  <div class="Card mb-3 col-lg-3 col-md-6" id="product" >
+    <div class="card"  style="width: 250px;" onclick="location.href=' /product/{{product.id}} '">
+        <div class="imgBx">
+            <img src=" {{ product.imageURL }} ">
+        </div>
+        <div class="contentBx d-flex flex-column" style="gap: 1rem;" >
+            <h2> {{ product.name }} </h2>
+            <div class="size">
+            <h3>Size :</h3>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            </div>
+            <div class="color">
+            <h3>Color :</h3>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="link  d-flex mt-4 mb-5 justify-content-start">
+    <a class="btn btn-dark mr-4 ml-4" href="#">${{product.price|floatformat:2}}</a>
+    <button data-product= {{product.id}} data-action="add" class="btn ml-5 btn-dark add-btn update-cart">Cart</button>
+    </div>
+</div>
+  {% endfor %}
+</div>
+
+</div>
+
+
+<div class="container-fluid bg-light">
+
+  <div class="container-fluid d-flex m-0 p-0 justify-content-between" style="background-color: rgba(0, 0, 0, 0.05); border-radius: 30px ; height: 5rem; align-items: center;">
+
+    <div class="container-fluid h-50 m-1 p-0 w-auto" >
+      <h2 class="p-0 m-0 ">BRAND</h2>
+    </div>
+
+    <div class="container-fluid h-50 m-1 p-1 d-flex w-auto">
+    <button class="btn " style="background-color: rgba(183, 177, 229, 0.805); border-radius: 3rem; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);" onclick="location.href=' /brand '">VIEW ALL ></button>
+    </div>
+
+  </div>
+  <hr>
+
+
+  <div class="row">
+    {% if data %}
+        {% for brand in data %}
+        <div class="col-md-3  mb-4" >
+            <div class="card shadow" style="border-radius:2rem">
+              <a href="/product_list/{{brand.id}}"><img src="{{brand.imageURL}}" class="card-img-top" alt="{{brand.title}}" /></a>
+              <div class="card-body  d-flex " style="align-items: center; justify-content: center;">
+                  <h2 class="card-text"><a href="#">{{brand.title}}</a></h6>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+</div>
+
+{% endblock body %}

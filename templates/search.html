@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'style/man.css' %}" />
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+<div class="container-fluid bg-light ">
+
+  <div class="sticky-top container-fluid mt-3 mb-5  d-flex m-0 p-0 justify-content-between" style=" top:2.5rem; background-color: #e7cb4c; border-radius: 30px ; height: 5rem; align-items: center;">
+
+    <div class="container-fluid h-50 m-1 p-0 w-auto" >
+      <h2 class="p-0 m-0 "><span class="text-muted">Search results for</span> "{{request.GET.q}}" </h2>
+    </div>
+  
+    <div class="container-fluid h-50 m-1 p-1 d-flex w-auto">
+    <button class="btn" style="background-color: rgba(215, 220, 58, 0.805); border-radius: 3rem; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);"  onclick="location.href=' /all_product '">VIEW ALL</button>
+    </div>
+    
+  
+  </div>
+
+  
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+  
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+  
+      .Card{
+        position: relative;
+      }
+  
+      .Card .card{
+        position: relative;
+        /* /* width: 305px; */
+        height: 350px; 
+        background: #9fe2ae;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+  
+      .Card .card:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #9bdc28;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+      }
+  
+      .Card .card:hover:before{
+        clip-path: circle(300px at 80% -20%);
+      }
+  
+      .Card .card:after{
+        content: 'Nike';
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255,255,25,0.05)
+      }
+  
+      .Card .card .imgBx{
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        /* z-index: 10000; */
+        width: 100%;
+        height: 100px;
+        transition: 0.5s;
+      }
+  
+      .Card .card:hover .imgBx{
+        top: 0%;
+        transform: translateY(0%);
+          
+      }
+  
+      .Card .card .imgBx img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        width: 270px;
+      }
+  
+      .Card .card .contentBx{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+      }
+  
+      .Card .card:hover .contentBx{
+        height: 210px;
+      }
+  
+      .Card .card .contentBx h2{
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0;
+      }
+  
+      .Card .card .contentBx .size, .Card .card .contentBx .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        transition: 0.5s;opacity: 0;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+  
+      .Card .card:hover .contentBx .size{
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+      }
+  
+      .Card .card:hover .contentBx .color{
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.6s;
+      }
+  
+      .Card .card .contentBx .size h3, .Card .card .contentBx .color h3{
+        color: rgb(22, 23, 24);
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 10px;
+      }
+  
+      .Card .card .contentBx .size span{
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        display: inline-block;
+        color: #111;
+        background: #fff;
+        margin: 0 5px;
+        transition: 0.5s;
+        color: #111;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  
+      .Card .card .contentBx .size span:hover{
+        background: #9bdc28;
+      }
+  
+      .Card .card .contentBx .color span{
+        width: 20px;
+        height: 20px;
+        background: #ff0;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+  
+      .Card .card .contentBx .color span:nth-child(2){
+        background: #9bdc28;
+      }
+  
+      .Card .card .contentBx .color span:nth-child(3){
+        background: #03a9f4;
+      }
+  
+      .Card .card .contentBx .color span:nth-child(4){
+        background: #e91e63;
+      }
+  
+      .Card .card .contentBx a{
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #111;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s;
+        margin-top: 0;
+      }
+  
+      .Card .card:hover .contentBx a{
+        opacity: 1;
+        transform: translateY(0px);
+        transition-delay: 0.75s;
+        
+      }
+  
+    </style>
+  
+  <div class="row ml-3">
+  
+    {% for product in products  %}
+    <div class="Card mb-3 col-lg-3 col-md-6" id="product" >
+      <div class="card"  style="width: 250px;" onclick="location.href=' /product/{{product.id}} '">
+          <div class="imgBx">
+              <img src=" {{ product.imageURL }} ">
+          </div>
+          <div class="contentBx d-flex flex-column" style="gap: 1rem;" >
+              <h2> {{ product.name }} </h2>
+              <div class="size">
+              <h3>Size :</h3>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              </div>
+              <div class="color">
+              <h3>Color :</h3>
+              <span></span>
+              <span></span>
+              <span></span>
+              </div>
+          </div>
+      </div>
+      
+      <div class="link  d-flex mt-4 mb-5 justify-content-start">
+        <a class="btn btn-dark mr-4 ml-4" href="#">${{product.price|floatformat:2}}</a>
+        <button data-product= {{product.id}} data-action="add" class="btn ml-5 btn-dark add-btn update-cart">Cart</button>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  </div>
+
+
+{% load static %}
+<script src="{% static 'js/product.js' %}"></script>
+
+{% endblock body %}

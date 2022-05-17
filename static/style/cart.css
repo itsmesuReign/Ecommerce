@@ -1,0 +1,106 @@
+#cart-container{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    /* background-color: aqua; */
+}
+
+#cart-container table thead{
+    font-weight: 700;
+    background: #fd8c66;
+    
+}
+
+#cart-container table thead td{
+    color: aliceblue;
+    border: none;
+    padding: 6px 0;
+
+    
+}
+
+#cart-container table td {
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+
+#cart-container table tbody tr{
+    height:80px;
+    object-fit: cover;
+}
+
+#cart-container table tbody img{
+    width: 100px;
+    height:80px;
+    object-fit: cover;
+}
+
+#cart-container table tbody i{
+    color: #8d8c89;
+}
+
+#cart-bottom .cupon>div,
+#cart-bottom .total>div{
+    border-radius: 10px;
+}
+
+
+#cart-bottom .cupon h5,
+#cart-bottom .total h5{
+    background: #fd8c66;
+    color: aliceblue;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+#cart-bottom .cupon P,
+#cart-bottom .cupon input{
+    padding: 0 12px;
+    border-radius: 1rem;
+}
+
+#cart-bottom .cupon input{
+    height: 44px;
+}
+#cart-bottom .cupon input{
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div>div{
+    padding: 0 12px;
+}
+
+#cart-bottom .total h6{
+    color: #2a2a2a;
+}
+
+.second-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button{
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(14, 59, 238, 0.612);
+    border-radius: 1rem;
+}
+
+#cart-bottom .cupon div>button{
+    background-color: rgba(14, 59, 238, 0.612);
+    border-radius: 1rem;
+}
+
+.Cart{
+    border: 1px solid #b6b3b3;
+    background: #ede6fc;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+}

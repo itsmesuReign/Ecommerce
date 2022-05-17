@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<main class="container my-4">
+    <!-- Featured Products -->
+    <h3 class="my-4 border-bottom pb-1">Accessories</h3>
+    <div class="row">
+        {% if data %}
+            {% for accessories in data %}
+            <div class="col-md-3 mb-4">
+                <div class="card shadow" style="border-radius:2rem">
+                <a href="/accessories_list/{{accessories.id}}"><img src="{{accessories.imageURL}}" class="card-img-top" alt="{{accessories.name}}" /></a>
+                <div class="card-body  d-flex " style="align-items: center; justify-content: center;">
+                    <h2 class="card-text"><a href="#" style="white-space: nowrap;">{{accessories.name}}</a></h6>
+                </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</main>
+
+
+{% endblock body %}
